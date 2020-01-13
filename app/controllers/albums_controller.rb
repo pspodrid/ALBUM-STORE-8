@@ -44,9 +44,9 @@ class AlbumsController < ApplicationController
     redirect_to albums_path
   end
 
-  # private
-  #   def album_params
-  #     params.require(:album).permit(:name, :genre)
-  #   end
+  private
+    def album_params
+      params.require(:album).permit(:name, :genre)
+    end
 
 end
